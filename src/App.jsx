@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 //import './App.css'
 import { HeaderComponent } from './components/HeaderComponent'
 import ContentComponent from './components/ContentComponent'
-import Navbar from './Navbar'
+import {Navbar} from './components/Navbar'
 import CabinetMinisters from './CabinetMinisters'
 import {MapDemo1} from './components/MapDemo1'
 import { MapDemo2 } from './components/MapDemo2'
@@ -16,6 +16,18 @@ import { MapDemo7 } from './components/MapDemo7'
 import { MapDemo8 } from './components/MapDemo8'
 import MapDemo9 from './components/MapDemo9'
 import MapDemo10 from './components/MapDemo10'
+import { Route, Routes } from 'react-router-dom'
+import {NetflixMovies} from './components/NetflixMovies.jsx'
+import {NetflixShows} from './components/NetflixShows.jsx'
+import {NetflixHome} from './components/NetflixHome.jsx'
+import {Webseries} from './components/Webseries.jsx'
+import {Languages} from './components/Languages.jsx'
+import {About} from './components/About.jsx'
+
+
+
+
+
 
 
 function App() {
@@ -30,7 +42,16 @@ function App() {
     <div>
       
     
-      <MapDemo10/>
+     <Navbar></Navbar>
+    <Routes>
+        <Route path="/" element={<NetflixHome />}></Route>
+        <Route path="/netflixmovies" element={<NetflixMovies />}></Route>
+        <Route path="/netflixshows" element={<NetflixShows />}></Route>
+        <Route path="/webseries" element={<Webseries />}></Route>
+        <Route path="/languages" element={<Languages />}></Route>
+        <Route path="/about" element={<About />}></Route>
+
+      </Routes>
 
   
     </div>
