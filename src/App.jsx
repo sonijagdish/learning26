@@ -23,6 +23,9 @@ import {NetflixHome} from './components/NetflixHome.jsx'
 import {Webseries} from './components/Webseries.jsx'
 import {Languages} from './components/Languages.jsx'
 import {About} from './components/About.jsx'
+import {IplTeams} from './components/IplTeams.jsx'
+import { Watch } from './components/Watch.jsx'
+
 
 
 
@@ -31,32 +34,24 @@ import {About} from './components/About.jsx'
 
 
 function App() {
-
   //js code... num ber, string, underfined, boolean, object.
-
-
   return (
-
-    
-
     <div>
-      
-    
-     <Navbar></Navbar>
-    <Routes>
-        <Route path="/" element={<NetflixHome />}></Route>
-        <Route path="/netflixmovies" element={<NetflixMovies />}></Route>
-        <Route path="/netflixshows" element={<NetflixShows />}></Route>
-        <Route path="/webseries" element={<Webseries />}></Route>
-        <Route path="/languages" element={<Languages />}></Route>
-        <Route path="/about" element={<About />}></Route>
+      <Navbar></Navbar>
+      <Routes> 
+          <Route path="/" element={<NetflixHome />}></Route>
+          <Route path="/netflixmovies" element={<NetflixMovies/>}></Route>
+          <Route path="/netflixshows" element={<NetflixShows />}></Route>
+          <Route path="/webseries" element={<Webseries />}></Route>
+          <Route path="/languages" element={<Languages />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/IplTeams" element={<IplTeams/>}></Route>
+          <Route path="/watch/:name" element={<Watch/>}></Route>
 
       </Routes>
-
-  
     </div>
   )
 }
 
 
-export default App
+export default App;
