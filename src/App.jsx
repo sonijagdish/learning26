@@ -25,14 +25,10 @@ import {Languages} from './components/Languages.jsx'
 import {About} from './components/About.jsx'
 import {IplTeams} from './components/IplTeams.jsx'
 import { Watch } from './components/Watch.jsx'
-
-
-
-
-
-
-
-
+import { FunctionDemo1 } from './components/FunctionDemo1.jsx'
+import { UseStateDemo1 } from './components/UseStateDemo1.jsx'
+import { Employees } from './components/Employees.jsx'
+import { Employess3 } from './components/Employess3.jsx'
 function App() {
   //js code... num ber, string, underfined, boolean, object.
   return (
@@ -47,6 +43,11 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/IplTeams" element={<IplTeams/>}></Route>
           <Route path="/watch/:name" element={<Watch/>}></Route>
+          <Route path="/functionDemo1" element={<FunctionDemo1/>}></Route>
+          <Route path="/useStateDemo1" element={<UseStateDemo1/>}></Route>
+          <Route path="/employees" element={<Employees/>}></Route>
+           <Route path="/employees3" element={<Employess3/>}></Route>
+          
 
       </Routes>
     </div>

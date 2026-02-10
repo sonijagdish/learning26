@@ -11,9 +11,7 @@ export const IplTeams = () => {
             IPL Teams
             </h1>
 
-
-    <li>
-        <Link to="/watch/Chennai Super Kings">Chennai Super Kings</Link></li>
+    <li>  <Link to="/watch/Chennai Super Kings">Chennai Super Kings</Link></li>
       <li>
         <Link to="/watch/Royal Challengers Bengaluru">Royal Challengers Bengaluru</Link></li>
       <li>
