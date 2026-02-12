@@ -32,14 +32,16 @@ import { Employess3 } from './components/Employess3.jsx'
 import { InputDemo2 } from './components/InputDemo2.jsx'
 import { FormDemo1 } from './components/form/FormDemo1.jsx'
 import { InputDropDown} from './components/InputDropDown.jsx'
+import { FormDemo2 } from './components/form/FormDemo2.jsx'
+import { FormDemo3 } from './components/form/FormDemo3.jsx'
 
 function App() {
   //js code... num ber, string, underfined, boolean, object.
   return (
     <div>
-      <Navbar></Navbar>
+     {/*} <Navbar></Navbar>*/}
       <Routes> 
-          <Route path="/" element={<NetflixHome />}></Route>
+          {/*<Route path="/" element={<NetflixHome />}></Route>
           <Route path="/netflixmovies" element={<NetflixMovies/>}></Route>
           <Route path="/netflixshows" element={<NetflixShows />}></Route>
           <Route path="/webseries" element={<Webseries />}></Route>
@@ -54,11 +56,12 @@ function App() {
           <Route path="/inputDemo2" element={<InputDemo2/>}></Route>
           <Route path="/formDemo1" element={<FormDemo1/>}></Route>
           <Route path="/inputDropDown" element={<InputDropDown/>}></Route>
-          
-          
-
-      </Routes>
-    </div>
+           <Route path="/formDemo2" element={<FormDemo2/>}></Route>*/}
+    
+   </Routes>
+   {/*<FormDemo2></FormDemo2>*/}
+   <FormDemo3></FormDemo3>  
+      </div>
   )
 }
 
