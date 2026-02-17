@@ -12,7 +12,7 @@ export const Navbar = () => {
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                 <Link class="nav-link" to="/">NetfflixHome <span class="sr-only"></span></Link>
+                 {/* <Link class="nav-link" to="/">NetfflixHome <span class="sr-only"></span></Link>
                 <Link class="nav-link" to="/netflixmovies">NetflixMovies📽️ <span class="sr-only"></span></Link>
                 <Link class="nav-link" to="/netflixshows">NetflixShows <span class="sr-only"></span></Link>
                 <Link class="nav-link" to="/webseries">Webseries <span class="sr-only"></span></Link>
@@ -23,10 +23,18 @@ export const Navbar = () => {
                 <Link class="nav-link" to="/useStateDemo1">Use State demo1<span class="sr-only"></span></Link>
                 <Link class="nav-link" to="/employees">Employees<span class="sr-only"></span></Link>
                 <Link class="nav-link" to="/employees3">Employees3<span class="sr-only"></span></Link>
-                <Link class="nav-link" to="/inputDemo2">Input Demo2<span class="sr-only"></span></Link>
-                <Link class="nav-link" to="/formDemo1">Form Submit<span class="sr-only"></span></Link>
+                <Link class="nav-link" to="/inputDemo2">Input Demo2<span class="sr-only"></span></Link> */}
+                {/* <Link class="nav-link" to="/formDemo1">Form Submit<span class="sr-only"></span></Link>
                 <Link class="nav-link" to="/inputDropDown">Drop Down<span class="sr-only"></span></Link> 
-                <Link class="nav-link" to="/formDemo244">Form Demo 2<span class="sr-only"></span></Link> 
+                <Link class="nav-link" to="/formDemo2">Form Demo 2<span class="sr-only"></span></Link> 
+                <Link class="nav-link" to="/formDemo4">Form Demo 4<span class="sr-only"></span></Link>  */}
+
+
+                <Link class="nav-link" to="/Apidemo1">ApiDemo1</Link>
+                <Link class="nav-link" to="/Apidemo2">ApiDemo2</Link>
+                <Link class="nav-link" to="/Apidemo3">ApiDemo3</Link>
+                <Link class="nav-link" to="/Apidemo4">ApiDemo4</Link>
+
 
 
             </ul>

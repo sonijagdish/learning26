@@ -1,70 +1,81 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
 //import './App.css'
-import { HeaderComponent } from './components/HeaderComponent'
-import ContentComponent from './components/ContentComponent'
-import {Navbar} from './components/Navbar'
-import CabinetMinisters from './CabinetMinisters'
-import {MapDemo1} from './components/MapDemo1'
-import { MapDemo2 } from './components/MapDemo2'
-import { MapDemo3 } from './components/MapDemo3'
-import { MapDemo4 } from './components/MapDemo4'
-import { MapDemo5 } from './components/MapDemo5'
-import { MapDemo6 } from './components/MapDemo6'
-import { MapDemo7 } from './components/MapDemo7'
-import { MapDemo8 } from './components/MapDemo8'
-import MapDemo9 from './components/MapDemo9'
-import MapDemo10 from './components/MapDemo10'
-import { Route, Routes } from 'react-router-dom'
-import {NetflixMovies} from './components/NetflixMovies.jsx'
-import {NetflixShows} from './components/NetflixShows.jsx'
-import {NetflixHome} from './components/NetflixHome.jsx'
-import {Webseries} from './components/Webseries.jsx'
-import {Languages} from './components/Languages.jsx'
-import {About} from './components/About.jsx'
-import {IplTeams} from './components/IplTeams.jsx'
-import { Watch } from './components/Watch.jsx'
-import { FunctionDemo1 } from './components/FunctionDemo1.jsx'
-import { UseStateDemo1 } from './components/UseStateDemo1.jsx'
-import { Employees } from './components/Employees.jsx'
-import { Employess3 } from './components/Employess3.jsx'
-import { InputDemo2 } from './components/InputDemo2.jsx'
-import { FormDemo1 } from './components/form/FormDemo1.jsx'
-import { InputDropDown} from './components/InputDropDown.jsx'
-import { FormDemo2 } from './components/form/FormDemo2.jsx'
-import { FormDemo3 } from './components/form/FormDemo3.jsx'
+
+
+import { Route, Routes } from "react-router-dom";
+
+// import { NetflixHome } from "./Components/NetflixHome";
+// import { NetflixMovies } from "./Components/NetflixMovies";
+// import { NetflixShows } from "./Components/NetflixShows";
+// import { Navbar} from "./Components/NavBar"; 
+import { HomeComponent } from "./Components/HomeComponent";
+// import { About } from "./Components/About";
+// import { Payment} from "./Components/Payment";
+// import { Series } from "./Components/Series";
+// import { Error } from "./Components/Error";
+// import { Watch } from "./Components/Watch";
+// import { Teams } from "./Components/Teams";
+// import { TeamDetail } from "./Components/TeamDetails";
+// import { UseStateDemo1 } from "./Components/UseStateDemo1";
+// import { UseStateDemo2 } from "./Components/UseStateDemo2";
+// import { UseStateDemo3 } from "./Components/UseStateDemo3";
+// import { FunctionDemo } from "./Components/FunctionDemo";
+// import { Employees } from "./Components/Employees";
+// import { EmployeeList } from "./Components/EmployeeList";
+// import { SubEmployeeList } from "./Components/SubEmployeeList";
+// import { InputDemo } from "./Components/InputDemo";
+// import { FormDemo1 } from "./Components/form/FormDemo1";
+// import { FormDemo2 } from "./Components/form/FormDemo2";
+// import { FormDemo3 } from "./Components/form/Formdemo3";
+// import { FormDemo4 } from "./Components/form/FormDemo4";
+// import { FormDemo5 } from "./Components/form/FormDemo5";
+// import { FormWatch } from "./Components/form/FormWatch";
+
+import { ApiDemo1 } from "./components/API/ApiDemo1";
+import { ApiDemo2 } from "./components/API/ApiDemo2";
+import { ApiDemo3 } from "./components/API/ApiDemo3";
+import { ApiDemo4 } from "./components/API/ApiDemo4";
+import { Navbar } from "./components/Navbar";
 
 function App() {
-  //js code... num ber, string, underfined, boolean, object.
   return (
     <div>
-     {/*} <Navbar></Navbar>*/}
-      <Routes> 
-          {/*<Route path="/" element={<NetflixHome />}></Route>
-          <Route path="/netflixmovies" element={<NetflixMovies/>}></Route>
-          <Route path="/netflixshows" element={<NetflixShows />}></Route>
-          <Route path="/webseries" element={<Webseries />}></Route>
-          <Route path="/languages" element={<Languages />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/IplTeams" element={<IplTeams/>}></Route>
-          <Route path="/watch/:name" element={<Watch/>}></Route>
-          <Route path="/functionDemo1" element={<FunctionDemo1/>}></Route>
-          <Route path="/useStateDemo1" element={<UseStateDemo1/>}></Route>
-          <Route path="/employees" element={<Employees/>}></Route>
-          <Route path="/employees3" element={<Employess3/>}></Route>
-          <Route path="/inputDemo2" element={<InputDemo2/>}></Route>
-          <Route path="/formDemo1" element={<FormDemo1/>}></Route>
-          <Route path="/inputDropDown" element={<InputDropDown/>}></Route>
-           <Route path="/formDemo2" element={<FormDemo2/>}></Route>*/}
-    
-   </Routes>
-   {/*test commit*/}
-   {/*<FormDemo2></FormDemo2>*/}
-   <FormDemo3></FormDemo3>  
-      </div>
-  )
+      <Navbar />
+      <Routes>
+        <Route path="/" element = {<HomeComponent/>}></Route>
+        {/* <Route path="/netflixhome" element={<NetflixHome />}></Route>
+        <Route path="/netflixmovies" element={<NetflixMovies />}></Route>
+        <Route path="/netflixshows" element={<NetflixShows />}></Route>
+        <Route path="/about" element={<About />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/series" element={<Series />} />
+        <Route path="/*" element={<Error></Error>} />
+        <Route path="/watch/:name" element = {<Watch/>}></Route>
+        <Route path="/teams" element={<Teams />} />
+        <Route path="/teamdetail/:teamname" element={<TeamDetail />} />
+        <Route path="/UseState1" element={<UseStateDemo1/>} />
+        <Route path="/UseState2" element={<UseStateDemo2 />} />
+        <Route path="/UseState3" element={<UseStateDemo3 />} />
+        <Route path="/FunctionDemo" element={<FunctionDemo />} />
+        <Route path="/Employees" element={<Employees/>} />
+        <Route path="/EmployeeList" element={<EmployeeList/>} />
+        <Route path="/SubEmployeeList" element={<SubEmployeeList/>} />
+        <Route path="/InputDemo" element={<InputDemo/>} />
+        <Route path="/formdemo1" element = {<FormDemo1/>}></Route>
+        <Route path="/formdemo2" element = {<FormDemo2/>}></Route>
+        <Route path="/formdemo3" element = {<FormDemo3/>}></Route>
+        <Route path="/formdemo4" element = {<FormDemo4/>}></Route>
+        <Route path="/formdemo5" element = {<FormDemo5/>}></Route>
+        <Route path="/formwatch" element = {<FormWatch/>}></Route> */}
+        <Route path="/ApiDemo1" element = {<ApiDemo1/>}></Route>
+        <Route path="/ApiDemo2" element = {<ApiDemo2/>}></Route>
+        <Route path="/ApiDemo3" element = {<ApiDemo3/>}></Route>
+        <Route path="/ApiDemo4" element = {<ApiDemo4/>}></Route>
+      </Routes>
+    </div>
+  );
 }
-
 
 export default App;
