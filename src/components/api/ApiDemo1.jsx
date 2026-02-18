@@ -22,8 +22,8 @@ export const ApiDemo1 = () => {
 
 
   return (
-    <div style={{textAlign:"center",padding:50}}>
-        <h1>API DEMO 1</h1>
+    <div style={{textAlign:"center",padding:50, backgroundColor:"lightgreen"}}>
+        <h1 style={{color:"green"}}>API DEMO 1</h1>
         <button onClick={()=>{getUsers()}}>GET</button>
         <h1>MESSAGE = {message}</h1>
         {

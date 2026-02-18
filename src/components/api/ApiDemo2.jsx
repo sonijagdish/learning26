@@ -19,14 +19,14 @@ export const ApiDemo2 = () => {
     }
 
     return (
-        <div style={{ textAlign: "center", padding: 30 }}>
+        <div style={{ textAlign: "center", padding: 30, backgroundColor:"LightGoldenRodYellow" }}>
             <h1>API DEMO 2 - TABLE FORMAT</h1>
 
             <button onClick={getUsers}>GET USERS</button>
 
             <h2>Message: {message}</h2>
 
-            <table border="1" cellPadding="10" style={{ margin: "20px auto", borderCollapse: "collapse" }}>
+            <table border="1" cellPadding="10" style={{ margin: "20px auto", borderCollapse: "collapse", backgroundColor:"GhostWhite"}}>
                 <thead>
                     <tr>
                         <th>ID</th>

@@ -38,6 +38,9 @@ import { ApiDemo2 } from "./components/API/ApiDemo2";
 import { ApiDemo3 } from "./components/API/ApiDemo3";
 import { ApiDemo4 } from "./components/API/ApiDemo4";
 import { Navbar } from "./components/Navbar";
+import { OmdbSearch } from "./components/api/OmdbSearch";
+import { ApiDemo5 } from "./components/api/ApiDemo5";
+import { MovieDetail } from "./components/api/MoviesDetails";
 
 function App() {
   return (
@@ -72,7 +75,11 @@ function App() {
         <Route path="/ApiDemo1" element = {<ApiDemo1/>}></Route>
         <Route path="/ApiDemo2" element = {<ApiDemo2/>}></Route>
         <Route path="/ApiDemo3" element = {<ApiDemo3/>}></Route>
-        <Route path="/ApiDemo4" element = {<ApiDemo4/>}></Route>
+        
+        <Route path="/ApiDemo5" element = {<ApiDemo5/>}></Route>
+          <Route path="/OmdbSearch" element = {<OmdbSearch/>}></Route>
+           <Route path="/movie/:imdbID" element={<MovieDetail />} />
+
       </Routes>
     </div>
   );

@@ -26,10 +26,11 @@ export const ApiDemo3 = () => {
                 style={{
                     margin: "20px auto",
                     borderCollapse: "collapse",
-                    width: "90%"
+                    width: "90%",
+                    backgroundColor:"lightgrey"
                 }}
             >
-                <thead>
+                <thead >
                     <tr>
                         <th>ID</th>
                         <th>Title</th>

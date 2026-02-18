@@ -35,6 +35,9 @@ export const Navbar = () => {
                 <Link class="nav-link" to="/Apidemo3">ApiDemo3</Link>
                 <Link class="nav-link" to="/Apidemo4">ApiDemo4</Link>
 
+                <Link class="nav-link" to="/Apidemo5">ApiDemo5</Link>
+                <Link class="nav-link" to="/OmdbSearch">OmdbSearch</Link>
+
 
 
             </ul>

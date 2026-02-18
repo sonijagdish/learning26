@@ -14,8 +14,7 @@ export const ApiDemo4 = () => {
         }
     }
 
-    return (
-        <div style={{ textAlign: "center", padding: 30 }}>
+    return <div style={{ textAlign: "center", padding: 30, color:"navy blue", background:"0"}}>
             <h1>API DEMO 4 - COMMENTS TABLE</h1>
 
             <button onClick={getComments}>GET COMMENTS</button>
@@ -26,7 +25,8 @@ export const ApiDemo4 = () => {
                 style={{
                     margin: "20px auto",
                     borderCollapse: "collapse",
-                    width: "95%"
+                    width: "95%",
+                    backgroundColor:"beige"
                 }}
             >
                 <thead>
@@ -58,5 +58,5 @@ export const ApiDemo4 = () => {
                 </tbody>
             </table>
         </div>
-    )
+    
 }
